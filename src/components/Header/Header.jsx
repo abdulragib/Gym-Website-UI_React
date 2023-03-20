@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -16,8 +17,7 @@ const Header = () => {
             padding: "0.5rem",
             borderRadius: "5px",
           }}
-
-          onClick={()=>setMenuOpen(true)}
+          onClick={() => setMenuOpen(true)}
         >
           <img
             src={Bars}
@@ -27,11 +27,60 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li onClick={()=>setMenuOpen(false)}>Home</li>
-          <li onClick={()=>setMenuOpen(false)}>Programs</li>
-          <li onClick={()=>setMenuOpen(false)}>Why us</li>
-          <li onClick={()=>setMenuOpen(false)}>Plans</li>
-          <li onClick={()=>setMenuOpen(false)}>Testimonials</li>
+          <li>
+            <Link
+              to="home"
+              span={true}
+              smooth={true}
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="Programs"
+              span={true}
+              smooth={true}
+              onClick={() => setMenuOpen(false)}
+            >
+              Programs
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="Reasons"
+              span={true}
+              smooth={true}
+              onClick={() => setMenuOpen(false)}
+            >
+              Why us
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="Plans"
+              span={true}
+              smooth={true}
+              onClick={() => setMenuOpen(false)}
+            >
+              Plans
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="Testimonials"
+              span={true}
+              smooth={true}
+              onClick={() => setMenuOpen(false)}
+            >
+              Testimonials
+            </Link>
+          </li>
         </ul>
       )}
     </div>
