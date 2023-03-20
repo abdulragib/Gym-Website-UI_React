@@ -53,11 +53,11 @@ const Hero = () => {
             <span>expert coaches</span>
           </div>
           <div>
-            <span><NumberCounter start={978} end={800} delay='4' preFix='+'/></span>
+            <span><NumberCounter start={800} end={978} delay='4' preFix='+'/></span>
             <span>members joined</span>
           </div>
           <div>
-            <span><NumberCounter start={50} end={0} delay='4' preFix='+'/></span>
+            <span><NumberCounter start={0} end={50} delay='4' preFix='+'/></span>
             <span>fitness programs</span>
           </div>
         </div>
