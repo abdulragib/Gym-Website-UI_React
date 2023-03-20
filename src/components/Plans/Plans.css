@@ -68,6 +68,7 @@
 
 .plan > button{
     height:2.5rem;
+    border:none;
 }
 
 .plans>:nth-child(2)>svg{
