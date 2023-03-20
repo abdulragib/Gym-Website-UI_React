@@ -55,3 +55,11 @@
     filter:blur(200px);
     background:rgb(255,115,0);
 }
+
+@media screen and (max-width:768px){
+    .footer{
+        gap:1rem;
+        padding:0 0rem;
+        height:8rem;
+    }
+}
