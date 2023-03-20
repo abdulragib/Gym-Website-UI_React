@@ -1,12 +1,15 @@
 import React from "react";
 import Header from "../Header/Header.jsx";
 import "./Hero.css";
-import hero_image from '../../assets/hero_image.png';
-import hero_image_back from "../../assets/hero_image_back.png"
-import Heart from "../../assets/heart.png"
-import Calories from "../../assets/calories.png"
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 };
+
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
@@ -14,7 +17,12 @@ const Hero = () => {
         <Header />
         {/* the best ad */}
         <div className="the-best-ad">
-          <div></div>
+          {/* framer motion animation */}
+          <motion.div
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
           <span>The best fitness club in the town</span>
         </div>
 
@@ -55,30 +63,26 @@ const Hero = () => {
 
         {/* hero buttons */}
         <div className="hero-buttons">
-           <button className="btn">Get Started</button>
-           <button className="btn">Learn More</button>
+          <button className="btn">Get Started</button>
+          <button className="btn">Learn More</button>
         </div>
-
       </div>
-
 
       {/* Right side */}
       <div className="right-h">
-          <button className="btn">
-              Join Now
-          </button>
+        <button className="btn">Join Now</button>
 
-          <div className="heart-rate">
-            <img src={Heart} alt="heart" />
-            <span>Heart Rate</span>
-            <span>116 bpm</span>
-          </div>
+        <div className="heart-rate">
+          <img src={Heart} alt="heart" />
+          <span>Heart Rate</span>
+          <span>116 bpm</span>
+        </div>
       </div>
 
       {/* hero image */}
-      <img src={hero_image} alt="Body" className="hero-image"/>
-      <img src={hero_image_back} alt="Body-Asset" className="hero-image-back"/>
-      
+      <img src={hero_image} alt="Body" className="hero-image" />
+      <img src={hero_image_back} alt="Body-Asset" className="hero-image-back" />
+
       {/* calories */}
       <div className="calories">
         <img src={Calories} alt="Calories" />
