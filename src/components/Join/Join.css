@@ -35,7 +35,7 @@
     display:flex;
     gap:3rem;
     background-color:gray;
-    padding:1rem 2rem;
+    padding:1rem 1.4rem 1rem 1.2rem;
 }
 
 .email-container>input{
@@ -71,7 +71,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-bottom:-3rem;
+        margin-bottom:-3rem; 
     }
 
     .right-j >form> button{
@@ -84,12 +84,13 @@
 
     .right-j>form{ 
         display:inline;
-        width:12rem;
+        width:13rem;
         border-radius: 0.8rem;
+        
     }
 
     .Join>:nth-child(2){
-        padding-left:0.6rem;
+        padding-left:1rem;
     }
 
     .email-container>input{
