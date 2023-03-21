@@ -66,15 +66,20 @@
     }
 
     .right-j{
-        padding:2rem;
+        padding:3rem 1.3rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .right-j >form> button{
         width:8rem;
+        margin-top:1.5rem;
     }
 
-    .right-j>form{
-        gap:2rem;
+    .right-j>form{ 
+        display:inline;
+        width:13rem;
     }
 
     .Join>:nth-child(2){
