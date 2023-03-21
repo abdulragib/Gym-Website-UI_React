@@ -94,6 +94,7 @@
 
     .email-container>input{
       margin-top:0.5rem;
+      width:50vw;
       border: 1px solid var(--lightgray);
       border-bottom-width: 0.5px;
       padding:0.5rem 0rem 0.5rem 0.5rem;
