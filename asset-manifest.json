@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gym-Website-UI_React/static/css/main.57f31aea.css",
+    "main.css": "/Gym-Website-UI_React/static/css/main.37c3eef9.css",
     "main.js": "/Gym-Website-UI_React/static/js/main.38161010.js",
     "static/media/hero_image.png": "/Gym-Website-UI_React/static/media/hero_image.e19ac0c6b1009c7280f5.png",
     "static/media/t-image1.png": "/Gym-Website-UI_React/static/media/t-image1.c16c2c261034cf78ee57.png",
@@ -12,11 +12,11 @@
     "static/media/t-image2.jpg": "/Gym-Website-UI_React/static/media/t-image2.f5d2e52e514c544dfffb.jpg",
     "static/media/hero_image_back.png": "/Gym-Website-UI_React/static/media/hero_image_back.9f54bfba33048f4ca688.png",
     "index.html": "/Gym-Website-UI_React/index.html",
-    "main.57f31aea.css.map": "/Gym-Website-UI_React/static/css/main.57f31aea.css.map",
+    "main.37c3eef9.css.map": "/Gym-Website-UI_React/static/css/main.37c3eef9.css.map",
     "main.38161010.js.map": "/Gym-Website-UI_React/static/js/main.38161010.js.map"
   },
   "entrypoints": [
-    "static/css/main.57f31aea.css",
+    "static/css/main.37c3eef9.css",
     "static/js/main.38161010.js"
   ]
 }
