@@ -1,5 +1,6 @@
 {
   "name": "fitclub",
+  "homepage": "https://github.com/abdulragib/Gym-Website-UI_React",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "emailjs": "^4.0.0",
     "framer-motion": "^6.3.15",
+    "gh-pages": "^5.0.0",
     "number-counter": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
