@@ -2,11 +2,11 @@
     padding: 0 2rem;
     display:flex;
     grid:2rem;
-    gap:2rem;
+    gap:4rem;
 }
 
 .left-r{
-    flex:1 1;
+    flex:0.5 1;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:1rem;
